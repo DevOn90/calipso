@@ -11,3 +11,6 @@ oclif.manifest.json
 
 yarn.lock
 pnpm-lock.yaml
+ 
+# NPM Configuration file
+.npmrc

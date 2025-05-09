@@ -15,6 +15,17 @@ A new CLI generated with oclif
 <!-- tocstop -->
 # Usage
 <!-- usage -->
+```sh-session
+$ npm install -g @devon90/calipso
+$ calipso COMMAND
+running command...
+$ calipso (--version)
+@devon90/calipso/2.0.2 linux-arm64 node-v20.19.1
+$ calipso --help [COMMAND]
+USAGE
+  $ calipso COMMAND
+...
+```
+<!-- usagestop -->
 
 # Commands
-
