@@ -1,11 +1,8 @@
 {
-  "name": "calipso",
-  "description": "A new CLI generated with oclif",
-  "version": "0.0.0",
-  "author": "Your Name Here",
-  "bin": {
-    "calipso": "./bin/run.js"
-  },
+  "name": "@devon90/calipso",
+  "description": "A new test CLI generated with oclif",
+  "version": "2.0.2",
+  "author": "My Name",
   "bugs": "https://github.com/Desktop/calipso/issues",
   "dependencies": {
     "@oclif/core": "^4",
@@ -14,6 +11,7 @@
     "inquirer": "^12.6.0"
   },
   "devDependencies": {
+    "@devon90/calipso": "^2.0.1",
     "@eslint/compat": "^1",
     "@oclif/prettier-config": "^0.2.1",
     "@oclif/test": "^4",
@@ -34,12 +32,7 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "files": [
-    "./bin",
-    "./dist",
-    "./oclif.manifest.json"
-  ],
-  "homepage": "https://github.com/Desktop/calipso",
+  "homepage": "https://github.com/DevOn90/calipso/#readme",
   "keywords": [
     "oclif"
   ],
@@ -61,7 +54,27 @@
       }
     }
   },
-  "repository": "Desktop/calipso",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevOn90/calipso.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "files": [
+    "./bin/run.js",
+    "./bin/run.cmd",
+    "./dist",
+    "./oclif.manifest.json"
+  ],
+  "bin": {
+    "calipso": "./bin/run.js",
+    "calipso.cmd": "./bin/run.cmd"
+  },
+  "exports": {
+    "./calipso": "./bin/run.js",
+    "./calipso.cmd": "./bin/run.cmd"
+  },
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
     "lint": "eslint",
